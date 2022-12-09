@@ -1,0 +1,272 @@
+import {
+  button_styles_default
+} from "./chunk.IQD3D6LM.js";
+import {
+  FormSubmitController
+} from "./chunk.NLE6UQAQ.js";
+import {
+  i as i2,
+  n
+} from "./chunk.FBMFS4OI.js";
+import {
+  LocalizeController
+} from "./chunk.XMQCXZ3F.js";
+import {
+  HasSlotController
+} from "./chunk.3IYPB6RR.js";
+import {
+  l
+} from "./chunk.Z74LDZ2V.js";
+import {
+  o
+} from "./chunk.3TBY3BXC.js";
+import {
+  watch
+} from "./chunk.HFHIZRKF.js";
+import {
+  ShoelaceElement,
+  e,
+  e2,
+  i,
+  t
+} from "./chunk.H63YSOTP.js";
+import {
+  __decorateClass
+} from "./chunk.WN26B4OP.js";
+
+// src/components/button/button.ts
+var SlButton = class extends ShoelaceElement {
+  constructor() {
+    super(...arguments);
+    this.formSubmitController = new FormSubmitController(this, {
+      form: (input) => {
+        if (input.hasAttribute("form")) {
+          const doc = input.getRootNode();
+          const formId = input.getAttribute("form");
+          return doc.getElementById(formId);
+        }
+        return input.closest("form");
+      }
+    });
+    this.hasSlotController = new HasSlotController(this, "[default]", "prefix", "suffix");
+    this.localize = new LocalizeController(this);
+    this.hasFocus = false;
+    this.invalid = false;
+    this.title = "";
+    this.variant = "default";
+    this.size = "medium";
+    this.caret = false;
+    this.disabled = false;
+    this.loading = false;
+    this.outline = false;
+    this.pill = false;
+    this.circle = false;
+    this.type = "button";
+    this.name = "";
+    this.value = "";
+    this.href = "";
+  }
+  firstUpdated() {
+    if (this.isButton()) {
+      this.invalid = !this.button.checkValidity();
+    }
+  }
+  click() {
+    this.button.click();
+  }
+  focus(options) {
+    this.button.focus(options);
+  }
+  blur() {
+    this.button.blur();
+  }
+  checkValidity() {
+    if (this.isButton()) {
+      return this.button.checkValidity();
+    }
+    return true;
+  }
+  reportValidity() {
+    if (this.isButton()) {
+      return this.button.reportValidity();
+    }
+    return true;
+  }
+  setCustomValidity(message) {
+    if (this.isButton()) {
+      this.button.setCustomValidity(message);
+      this.invalid = !this.button.checkValidity();
+    }
+  }
+  handleBlur() {
+    this.hasFocus = false;
+    this.emit("sl-blur");
+  }
+  handleFocus() {
+    this.hasFocus = true;
+    this.emit("sl-focus");
+  }
+  handleClick(event) {
+    if (this.disabled || this.loading) {
+      event.preventDefault();
+      event.stopPropagation();
+      return;
+    }
+    if (this.type === "submit") {
+      this.formSubmitController.submit(this);
+    }
+    if (this.type === "reset") {
+      this.formSubmitController.reset(this);
+    }
+  }
+  handleDisabledChange() {
+    if (this.isButton()) {
+      this.button.disabled = this.disabled;
+      this.invalid = !this.button.checkValidity();
+    }
+  }
+  isButton() {
+    return this.href ? false : true;
+  }
+  isLink() {
+    return this.href ? true : false;
+  }
+  render() {
+    const isLink = this.isLink();
+    const tag = isLink ? i2`a` : i2`button`;
+    return n`
+      <${tag}
+        part="base"
+        class=${o({
+      button: true,
+      "button--default": this.variant === "default",
+      "button--primary": this.variant === "primary",
+      "button--success": this.variant === "success",
+      "button--neutral": this.variant === "neutral",
+      "button--warning": this.variant === "warning",
+      "button--danger": this.variant === "danger",
+      "button--text": this.variant === "text",
+      "button--small": this.size === "small",
+      "button--medium": this.size === "medium",
+      "button--large": this.size === "large",
+      "button--caret": this.caret,
+      "button--circle": this.circle,
+      "button--disabled": this.disabled,
+      "button--focused": this.hasFocus,
+      "button--loading": this.loading,
+      "button--standard": !this.outline,
+      "button--outline": this.outline,
+      "button--pill": this.pill,
+      "button--rtl": this.localize.dir() === "rtl",
+      "button--has-label": this.hasSlotController.test("[default]"),
+      "button--has-prefix": this.hasSlotController.test("prefix"),
+      "button--has-suffix": this.hasSlotController.test("suffix")
+    })}
+        ?disabled=${l(isLink ? void 0 : this.disabled)}
+        type=${l(isLink ? void 0 : this.type)}
+        title=${this.title}
+        name=${l(isLink ? void 0 : this.name)}
+        value=${l(isLink ? void 0 : this.value)}
+        href=${l(isLink ? this.href : void 0)}
+        target=${l(isLink ? this.target : void 0)}
+        download=${l(isLink ? this.download : void 0)}
+        rel=${l(isLink && this.target ? "noreferrer noopener" : void 0)}
+        role=${l(isLink ? void 0 : "button")}
+        aria-disabled=${this.disabled ? "true" : "false"}
+        tabindex=${this.disabled ? "-1" : "0"}
+        @blur=${this.handleBlur}
+        @focus=${this.handleFocus}
+        @click=${this.handleClick}
+      >
+        <slot name="prefix" part="prefix" class="button__prefix"></slot>
+        <slot part="label" class="button__label"></slot>
+        <slot name="suffix" part="suffix" class="button__suffix"></slot>
+        ${this.caret ? n` <sl-icon part="caret" class="button__caret" library="system" name="caret"></sl-icon> ` : ""}
+        ${this.loading ? n`<sl-spinner></sl-spinner>` : ""}
+      </${tag}>
+    `;
+  }
+};
+SlButton.styles = button_styles_default;
+__decorateClass([
+  i(".button")
+], SlButton.prototype, "button", 2);
+__decorateClass([
+  t()
+], SlButton.prototype, "hasFocus", 2);
+__decorateClass([
+  t()
+], SlButton.prototype, "invalid", 2);
+__decorateClass([
+  e2()
+], SlButton.prototype, "title", 2);
+__decorateClass([
+  e2({ reflect: true })
+], SlButton.prototype, "variant", 2);
+__decorateClass([
+  e2({ reflect: true })
+], SlButton.prototype, "size", 2);
+__decorateClass([
+  e2({ type: Boolean, reflect: true })
+], SlButton.prototype, "caret", 2);
+__decorateClass([
+  e2({ type: Boolean, reflect: true })
+], SlButton.prototype, "disabled", 2);
+__decorateClass([
+  e2({ type: Boolean, reflect: true })
+], SlButton.prototype, "loading", 2);
+__decorateClass([
+  e2({ type: Boolean, reflect: true })
+], SlButton.prototype, "outline", 2);
+__decorateClass([
+  e2({ type: Boolean, reflect: true })
+], SlButton.prototype, "pill", 2);
+__decorateClass([
+  e2({ type: Boolean, reflect: true })
+], SlButton.prototype, "circle", 2);
+__decorateClass([
+  e2()
+], SlButton.prototype, "type", 2);
+__decorateClass([
+  e2()
+], SlButton.prototype, "name", 2);
+__decorateClass([
+  e2()
+], SlButton.prototype, "value", 2);
+__decorateClass([
+  e2()
+], SlButton.prototype, "href", 2);
+__decorateClass([
+  e2()
+], SlButton.prototype, "target", 2);
+__decorateClass([
+  e2()
+], SlButton.prototype, "download", 2);
+__decorateClass([
+  e2()
+], SlButton.prototype, "form", 2);
+__decorateClass([
+  e2({ attribute: "formaction" })
+], SlButton.prototype, "formAction", 2);
+__decorateClass([
+  e2({ attribute: "formenctype" })
+], SlButton.prototype, "formEnctype", 2);
+__decorateClass([
+  e2({ attribute: "formmethod" })
+], SlButton.prototype, "formMethod", 2);
+__decorateClass([
+  e2({ attribute: "formnovalidate", type: Boolean })
+], SlButton.prototype, "formNoValidate", 2);
+__decorateClass([
+  e2({ attribute: "formtarget" })
+], SlButton.prototype, "formTarget", 2);
+__decorateClass([
+  watch("disabled", { waitUntilFirstUpdate: true })
+], SlButton.prototype, "handleDisabledChange", 1);
+SlButton = __decorateClass([
+  e("sl-button")
+], SlButton);
+
+export {
+  SlButton
+};
