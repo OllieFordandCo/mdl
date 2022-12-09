@@ -1,9 +1,9 @@
 {
-  "name": "@shoelace-style/shoelace",
+  "name": "@olliefordandco/mdl",
   "description": "A forward-thinking library of web components.",
   "version": "2.0.0-beta.85",
-  "homepage": "https://github.com/shoelace-style/shoelace",
-  "author": "Cory LaViska",
+  "homepage": "https://github.com/OllieFordandCo/mdl",
+  "author": "Ruben Madila",
   "license": "MIT",
   "customElements": "dist/custom-elements.json",
   "web-types": "dist/web-types.json",
@@ -30,10 +30,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shoelace-style/shoelace.git"
+    "url": "git+https://github.com/OllieFordandCo/mdl.git"
   },
   "bugs": {
-    "url": "https://github.com/shoelace-style/shoelace/issues"
+    "url": "https://github.com/OllieFordandCo/mdl/issues"
   },
   "funding": {
     "type": "individual",
