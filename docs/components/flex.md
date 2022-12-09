@@ -6,9 +6,9 @@ A description of the component goes here.
 
 ```html preview
 <sl-flex justify="space-between">
-    <sl-button>Button</sl-button>
-    <sl-button>Button</sl-button>
-    <sl-button>Button</sl-button>
+  <sl-button>Button</sl-button>
+  <sl-button>Button</sl-button>
+  <sl-button>Button</sl-button>
 </sl-flex>
 ```
 
@@ -20,9 +20,9 @@ TODO
 
 ```html preview
 <sl-flex direction="column" gap>
-    <sl-button>Button</sl-button>
-    <sl-button>Button</sl-button>
-    <sl-button>Button</sl-button>
+  <sl-button>Button</sl-button>
+  <sl-button>Button</sl-button>
+  <sl-button>Button</sl-button>
 </sl-flex>
 ```
 

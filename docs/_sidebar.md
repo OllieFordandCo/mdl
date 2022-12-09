@@ -100,5 +100,5 @@
   - [Integrating with Rails](/tutorials/integrating-with-rails)
 
 - Examples
-  
+
   - [Mdl Showcase](/showcase/mdl)

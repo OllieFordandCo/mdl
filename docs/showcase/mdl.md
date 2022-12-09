@@ -6,8 +6,8 @@ Shoelace components can be customized at a high level through design tokens. Thi
 
 ```html preview
 <sl-flex class="sl-theme-primary" gap>
-<sl-button variant="primary" pill>Primary</sl-button>
-<sl-button variant="default" pill>Default</sl-button>
+  <sl-button variant="primary" pill>Primary</sl-button>
+  <sl-button variant="default" pill>Default</sl-button>
 </sl-flex>
 ```
 
@@ -15,8 +15,8 @@ Shoelace components can be customized at a high level through design tokens. Thi
 
 ```html preview
 <sl-flex class="sl-theme-lime" gap>
-<sl-button variant="primary" pill>Primary</sl-button>
-<sl-button variant="default" pill>Default</sl-button>
+  <sl-button variant="primary" pill>Primary</sl-button>
+  <sl-button variant="default" pill>Default</sl-button>
 </sl-flex>
 ```
 
@@ -24,8 +24,8 @@ Shoelace components can be customized at a high level through design tokens. Thi
 
 ```html preview
 <sl-flex class="sl-theme-magenta" gap>
-<sl-button variant="primary" pill>Primary</sl-button>
-<sl-button variant="default" pill>Default</sl-button>
+  <sl-button variant="primary" pill>Primary</sl-button>
+  <sl-button variant="default" pill>Default</sl-button>
 </sl-flex>
 ```
 
@@ -33,8 +33,8 @@ Shoelace components can be customized at a high level through design tokens. Thi
 
 ```html preview
 <sl-flex class="sl-theme-jade" gap>
-<sl-button variant="primary" pill>Primary</sl-button>
-<sl-button variant="default" pill>Default</sl-button>
+  <sl-button variant="primary" pill>Primary</sl-button>
+  <sl-button variant="default" pill>Default</sl-button>
 </sl-flex>
 ```
 
@@ -42,10 +42,10 @@ Shoelace components can be customized at a high level through design tokens. Thi
 
 ```html preview
 <sl-flex class="sl-theme-primary" gap>
-<sl-button variant="success" pill>Success</sl-button>
-<sl-button variant="neutral" pill>Neutral</sl-button>
-<sl-button variant="warning" pill>Warning</sl-button>
-<sl-button variant="danger" pill loading>Danger</sl-button>
+  <sl-button variant="success" pill>Success</sl-button>
+  <sl-button variant="neutral" pill>Neutral</sl-button>
+  <sl-button variant="warning" pill>Warning</sl-button>
+  <sl-button variant="danger" pill loading>Danger</sl-button>
 </sl-flex>
 ```
 

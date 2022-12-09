@@ -28,76 +28,76 @@ export default css`
     flex-direction: var(--flex-direction, row);
   }
 
-  :host([direction="column"]) .flex-container {
+  :host([direction='column']) .flex-container {
     flex-direction: column;
     flex: 1;
   }
 
-    :host([row-gap]) .flex-container {
-        row-gap: var(--row-gap, 1rem);
-    }
+  :host([row-gap]) .flex-container {
+    row-gap: var(--row-gap, 1rem);
+  }
 
-    :host([gap]) .flex-container {
-        gap: var(--gap, 1rem);
-    }
+  :host([gap]) .flex-container {
+    gap: var(--gap, 1rem);
+  }
 
-    :host([column-gap]) .flex-container {
-        column-gap: var(--column-gap, 1rem);
-    }
+  :host([column-gap]) .flex-container {
+    column-gap: var(--column-gap, 1rem);
+  }
 
-    :host([grow]) {
-      --max-width: 100%;
-      --width: 100%;
-    }
+  :host([grow]) {
+    --max-width: 100%;
+    --width: 100%;
+  }
 
-    :host([layout-contained]) {
-        max-width: 100%;
-        width: var(--layout-width, 980px);
-        margin: 0 auto;
-    }
+  :host([layout-contained]) {
+    max-width: 100%;
+    width: var(--layout-width, 980px);
+    margin: 0 auto;
+  }
 
-    :host([layout-contained]) .flex-container {
-        max-width: 100%;
-        width: var(--layout-width, 980px);
-        margin-left: auto;
-        margin-right: auto;
-    }
+  :host([layout-contained]) .flex-container {
+    max-width: 100%;
+    width: var(--layout-width, 980px);
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    :host([layout-contained="wide"]) {
-        width: var(--layout-width-wide, 1200px);
-    }
+  :host([layout-contained='wide']) {
+    width: var(--layout-width-wide, 1200px);
+  }
 
-  :host([justify="center"]) .flex-container {
+  :host([justify='center']) .flex-container {
     justify-content: center;
   }
 
-  :host([justify="space-between"]) .flex-container {
+  :host([justify='space-between']) .flex-container {
     justify-content: space-between;
   }
 
-  :host([justify="space-around"]) .flex-container {
+  :host([justify='space-around']) .flex-container {
     justify-content: space-around;
   }
 
-  :host([align-items="space-evenly"]) .flex-container {
+  :host([align-items='space-evenly']) .flex-container {
     justify-content: space-evenly;
   }
 
-    :host([align-items="center"]) .flex-container {
-      align-items: center;
-    }
+  :host([align-items='center']) .flex-container {
+    align-items: center;
+  }
 
-    :host([align-items="start"]) .flex-container {
-      align-items: flex-start;
-    }
+  :host([align-items='start']) .flex-container {
+    align-items: flex-start;
+  }
 
-    :host([align-items="end"]) .flex-container {
-      align-items: flex-end;
-    }
+  :host([align-items='end']) .flex-container {
+    align-items: flex-end;
+  }
 
-    :host([align-items="baseline"]) .flex-container {
-      align-items: baseline;
-    }
+  :host([align-items='baseline']) .flex-container {
+    align-items: baseline;
+  }
 
   /* If the selector was .flex-gap > *, it wouldn't override when components have a margin 0 specified by a single
    * class selector, specificity is equal. Both are one class. Neither > nor * contribute to specificity.
