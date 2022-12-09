@@ -116,6 +116,7 @@ strong {
 }
 
 .sidebar li > p {
+  line-height: 2;
   font-weight: var(--sl-font-weight-bold);
   border-bottom: solid 1px var(--sl-color-neutral-200);
   margin: 0 0.75rem 0.5rem 0;

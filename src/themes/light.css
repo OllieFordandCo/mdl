@@ -73,17 +73,17 @@
   --sl-color-yellow-950: hsl(33.1 69% 13.9%);
 
   /* Lime */
-  --sl-color-lime-50: hsl(78.3 92% 95.1%);
-  --sl-color-lime-100: hsl(79.6 89.1% 89.2%);
-  --sl-color-lime-200: hsl(80.9 88.5% 79.6%);
-  --sl-color-lime-300: hsl(82 84.5% 67.1%);
-  --sl-color-lime-400: hsl(82.7 78% 55.5%);
-  --sl-color-lime-500: hsl(83.7 80.5% 44.3%);
-  --sl-color-lime-600: hsl(84.8 85.2% 34.5%);
-  --sl-color-lime-700: hsl(85.9 78.4% 27.3%);
-  --sl-color-lime-800: hsl(86.3 69% 22.7%);
-  --sl-color-lime-900: hsl(87.6 61.2% 20.2%);
-  --sl-color-lime-950: hsl(86.5 60.6% 13.9%);
+  --sl-color-lime-50: hsl(67 100% 70%);
+  --sl-color-lime-100: hsl(67 100% 60%);
+  --sl-color-lime-200: hsl(69 100% 53%);
+  --sl-color-lime-300: hsl(69 100% 47%);
+  --sl-color-lime-400: hsl(73 100% 45%);
+  --sl-color-lime-500: hsl(78 100% 50%);
+  --sl-color-lime-600: hsl(78 100% 42%);
+  --sl-color-lime-700: hsl(84 100% 39%);
+  --sl-color-lime-800: hsl(89 100% 30%);
+  --sl-color-lime-900: hsl(89 100% 20%);
+  --sl-color-lime-950: hsl(89 100% 10%);
 
   /* Green */
   --sl-color-green-50: hsl(138.5 76.5% 96.7%);

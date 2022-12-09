@@ -77,32 +77,32 @@ export default css`
   .button--standard.button--default {
     background-color: var(--sl-color-neutral-0);
     border-color: var(--sl-color-neutral-300);
-    color: var(--sl-color-neutral-700);
+    color: var(--sl-color-neutral-800);
   }
 
   .button--standard.button--default:hover:not(.button--disabled) {
-    background-color: var(--sl-color-primary-50);
-    border-color: var(--sl-color-primary-300);
-    color: var(--sl-color-primary-700);
+    background-color: var(--sl-color-primary-200);
+    border-color: var(--sl-color-primary-800);
+    color: var(--sl-color-primary-950);
   }
 
   .button--standard.button--default:active:not(.button--disabled) {
-    background-color: var(--sl-color-primary-100);
+    background-color: var(--sl-color-primary-300);
     border-color: var(--sl-color-primary-400);
-    color: var(--sl-color-primary-700);
+    color: var(--sl-color-primary-950);
   }
 
   /* Primary */
   .button--standard.button--primary {
-    background-color: var(--sl-color-primary-600);
-    border-color: var(--sl-color-primary-600);
-    color: var(--sl-color-neutral-0);
+    background-color: var(--sl-color-primary-300);
+    border-color: var(--sl-color-primary-400);
+    color: var(--sl-color-primary-950);
   }
 
   .button--standard.button--primary:hover:not(.button--disabled) {
-    background-color: var(--sl-color-primary-500);
-    border-color: var(--sl-color-primary-500);
-    color: var(--sl-color-neutral-0);
+    background-color: var(--sl-color-primary-200);
+    border-color: var(--sl-color-primary-800);
+    color: var(--sl-color-primary-950);
   }
 
   .button--standard.button--primary:active:not(.button--disabled) {

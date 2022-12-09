@@ -1,0 +1,138 @@
+:root,
+:host,
+.sl-theme-light, .sl-theme-dark,
+.sl-theme-lime, .sl-theme-magenta, .sl-theme-forest, .sl-theme-jade {
+    /* your custom styles here */
+
+    /* Pink */
+    --sl-color-pink-50: hsl(345 84% 82%);
+    --sl-color-pink-100: hsl(345 84% 72%);
+    --sl-color-pink-200: hsl(345 84% 67%);
+    --sl-color-pink-300: hsl(345 84% 57%);
+    --sl-color-pink-400: hsl(327 80% 53%);
+    --sl-color-pink-500: hsl(327 80% 43%);
+    --sl-color-pink-600: hsl(327 80% 40%);
+    --sl-color-pink-700: hsl(337 93% 38%);
+    --sl-color-pink-800: hsl(337 93% 30%);
+    --sl-color-pink-900: hsl(337 93% 25%);
+    --sl-color-pink-950: hsl(337 93% 15%);
+
+
+    --sl-color-blue-50: hsl(211, 100%, 99%);
+    --sl-color-blue-100: hsl(211, 100%, 95%);
+    --sl-color-blue-200: hsl(211, 100%, 85%);
+    --sl-color-blue-300: hsl(211, 100%, 75%);
+    --sl-color-blue-400: hsl(211, 100%, 60%);
+    --sl-color-blue-500: hsl(211, 100%, 50%);
+    --sl-color-blue-600: hsl(211, 100%, 40%);
+    --sl-color-blue-700: hsl(211, 100%, 30%);
+    --sl-color-blue-800: hsl(211, 100%, 20%);
+    --sl-color-blue-950: hsl(211, 100%, 12%);
+
+    --sl-font-weight-semibold: 500;
+    --sl-font-sans: 'Be Vietnam Pro', sans-serif;
+
+    --sl-spacing-3x-small: 0.1rem;
+    --sl-spacing-2x-small: 0.2rem;
+    --sl-spacing-x-small: 0.45rem;
+    --sl-spacing-small: 0.5rem;
+    --sl-spacing-medium: 1.75rem;
+    --sl-spacing-large: 2rem;
+    --sl-spacing-x-large: 2rem;
+    --sl-spacing-2x-large: 3rem;
+    --sl-spacing-3x-large: 4rem;
+    --sl-spacing-4x-large: 4.5rem;
+
+    --sl-input-height-small: 1.875rem;
+    --sl-input-height-medium: 2.75rem;
+    --sl-input-height-large: 3.125rem;
+
+}
+
+
+.sl-theme-lime {
+    /* your custom styles here */
+
+    --sl-color-primary-50: var(--sl-color-lime-50);
+    --sl-color-primary-100: var(--sl-color-lime-100);
+    --sl-color-primary-200: var(--sl-color-lime-200);
+    --sl-color-primary-300: var(--sl-color-lime-300);
+    --sl-color-primary-400: var(--sl-color-lime-400);
+    --sl-color-primary-500: var(--sl-color-lime-500);
+    --sl-color-primary-600: var(--sl-color-lime-600);
+    --sl-color-primary-700: var(--sl-color-lime-700);
+    --sl-color-primary-800: var(--sl-color-lime-800);
+    --sl-color-primary-900: var(--sl-color-lime-900);
+    --sl-color-primary-950: var(--sl-color-lime-950);
+
+
+}
+
+
+.sl-theme-magenta {
+    /* your custom styles here */
+    --sl-color-primary-50: var(--sl-color-pink-50);
+    --sl-color-primary-100: var(--sl-color-pink-100);
+    --sl-color-primary-200: var(--sl-color-pink-200);
+    --sl-color-primary-300: var(--sl-color-pink-300);
+    --sl-color-primary-400: var(--sl-color-pink-400);
+    --sl-color-primary-500: var(--sl-color-pink-500);
+    --sl-color-primary-600: var(--sl-color-pink-600);
+    --sl-color-primary-700: var(--sl-color-pink-700);
+    --sl-color-primary-800: var(--sl-color-pink-800);
+    --sl-color-primary-900: var(--sl-color-pink-900);
+    --sl-color-primary-950: var(--sl-color-pink-950);
+
+}
+
+.sl-theme-magenta sl-button::part(base) {
+    --sl-color-primary-950: #ffffff;
+}
+
+
+.sl-theme-jade {
+    /* your custom styles here */
+    --sl-color-primary-50: var(--sl-color-emerald-50);
+    --sl-color-primary-100: var(--sl-color-emerald-100);
+    --sl-color-primary-200: var(--sl-color-emerald-200);
+    --sl-color-primary-300: var(--sl-color-emerald-300);
+    --sl-color-primary-400: var(--sl-color-emerald-400);
+    --sl-color-primary-500: var(--sl-color-emerald-500);
+    --sl-color-primary-600: var(--sl-color-emerald-600);
+    --sl-color-primary-700: var(--sl-color-emerald-700);
+    --sl-color-primary-800: var(--sl-color-emerald-800);
+    --sl-color-primary-900: var(--sl-color-emerald-900);
+    --sl-color-primary-950: var(--sl-color-emerald-950);
+
+}
+
+
+.sl-theme-primary {
+    /* your custom styles here */
+    --sl-color-primary-50: var(--sl-color-blue-50);
+    --sl-color-primary-100: var(--sl-color-blue-100);
+    --sl-color-primary-200: var(--sl-color-blue-200);
+    --sl-color-primary-300: var(--sl-color-blue-300);
+    --sl-color-primary-400: var(--sl-color-blue-400);
+    --sl-color-primary-500: var(--sl-color-blue-500);
+    --sl-color-primary-600: var(--sl-color-blue-600);
+    --sl-color-primary-700: var(--sl-color-blue-700);
+    --sl-color-primary-800: var(--sl-color-blue-800);
+    --sl-color-primary-900: var(--sl-color-blue-900);
+    --sl-color-primary-950: var(--sl-color-blue-950);
+
+}
+
+
+sl-button::part(base) {
+    /* Set design tokens for height and border width */
+    --sl-input-height-medium: 48px;
+    --sl-input-border-width: 2px;
+    transition: var(--sl-transition-medium) transform ease, var(--sl-transition-medium) border ease;
+    transform-origin: center;
+}
+
+
+sl-button::part(base):hover {
+    transform: scale(1.05);
+}

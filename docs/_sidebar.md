@@ -66,6 +66,7 @@
   - [Tooltip](/components/tooltip)
   - [Tree](/components/tree)
   - [Tree Item](/components/tree-item)
+  - [Flex](/components/flex)
   <!--plop:component-->
 
 - Utilities
@@ -97,3 +98,7 @@
   - [Integrating with Laravel](/tutorials/integrating-with-laravel)
   - [Integrating with NextJS](/tutorials/integrating-with-nextjs)
   - [Integrating with Rails](/tutorials/integrating-with-rails)
+
+- Examples
+  
+  - [Mdl Showcase](/showcase/mdl)
